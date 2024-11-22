@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "flambe"
 version = "0.1.0"
-description = "Playing with DuckDB + FireDucks"
+description = "Playing with DuckDB + Polars"
 authors = ["Andy Armstrong <andy@hexten.net>"]
 readme = "README.md"
 package-mode = false
@@ -10,7 +10,26 @@ package-mode = false
 python = "^3.12"
 duckdb = "^1.1.3"
 polars = {extras = ["pyarrow"], version = "^1.14.0"}
+notebook = "^7.2.2"
+altair = "^5.4.1"
+pandas = "^2.2.3"
+typing-extensions = "^4.12.2"
+anywidget = "^0.9.13"
+geopandas = "^1.0.1"
+jupysql = "^0.10.16"
+matplotlib = "^3.9.2"
+toml = "^0.10.2"
+duckdb-engine = "^0.13.5"
+pycountry = "^24.6.1"
+ipyleaflet = "^0.19.2"
+shapely = "^2.0.6"
 
+[tool.jupysql.SqlMagic]
+feedback = false
+autopandas = false
+autopolars = true
+displaycon = false
+displaylimit = 1000
 
 [build-system]
 requires = ["poetry-core"]
